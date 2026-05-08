@@ -18,23 +18,98 @@ document.querySelectorAll('.reveal').forEach(el => {
 const candidateData = {
   'tua-lista': {
     title: 'La Tua Lista Civica',
-    names: ['DELLISANTI Mimmo', 'D\'APICE Sara', 'RIVA Roberto', 'CALLEGARI Paolo', 'BISANZIO Massimo', 'CARPANESE Gemma', 'PICATTI Dario', 'GRIMALDI Maria Silvana', 'ACUNZO Pasquale']
+    names: ['DELLISANTI Mimmo', 'D\'APICE Sara', 'RIVA Roberto', 'CALLEGARI Paolo', 'BISANZIO Massimo', 'CARPANESE Gemma', 'PICATTI Dario', 'GRIMALDI Maria Silvana', 'ACUNZO Pasquale', 'Adriani Anna Pia', 'Barna Giorgio', 'Martini Loredana', 'Verde Gioacchino', 'Bagetto Giovanni', 'Chichi Maria Rosaria', 'Alaimo Giuseppe', 'Corbo Maria Daniela', 'Acquafredda Maria Francesco', 'Boietto Gianluigi', 'Di Già Andrea', 'Tiozzo Marilena', 'Grieco Gianluca', 'Micheletto Simona', 'Sorich Angela']
   },
   'pensionati': {
     title: 'Noi Pensionati per Venaria',
-    names: ['PISTILLO Michele', 'BALBO Giancarlo', 'DEPALMA Maria', 'CONDEMI Giuseppe', 'ALDERUCCI Sebastiana', 'BRAGATEL Adriana', 'CHITO Angela', 'CIRELLI Franco', 'GALLOCCHIO Manuela', 'CAVO Rodolfo']
+    names: [
+      'PISTILLO Michele',
+      'BALBO Giancarlo',
+      'DEPALMA Maria',
+      'CONDEMI Giuseppe',
+      'ALDERUCCI Sebastiana',
+      'BRAGATEL Adriana',
+      'CHITO Angela',
+      'CIRELLI Franco',
+      'GALLOCCHIO Manuela',
+      'CAVO Rodolfo',
+      'FERIOLO Francesca',
+      'ALDERUCCI Rita',
+      'CIRELLI Nino',
+      'D’ANGELO Antonina',
+      'CRUDO Francesco',
+      'MENEGHETTI Ivo',
+      'VIGLIATURO Loredana',
+      'CIRIGLIANO Giorgio',
+      'CIRRI Antonino'
+    ]
   },
   'centro': {
     title: 'Venaria Al Centro',
-    names: ['BELLUZZO Elena', 'DEI Andrea', 'ACCORSI Elisa', 'PAVAN Federico', 'BERTAIOLA Ilenia', 'FUSETTI Monia', 'DEDAMIANI Gaetano', 'BOGO Tiziana', 'VENERA Mathis', 'CANNELLA Gaetana']
+    names: [
+      'BELLUZZO Elena',
+      'DEI Andrea',
+      'ACCORSI Elisa',
+      'PAVAN Federico',
+      'BERTAIOLA Ilenia',
+      'FUSETTI Monia',
+      'DEDAMIANI Gaetano',
+      'BOGO Tiziana',
+      'VENERA Mathis',
+      'CANNELLA Gaetana',
+      'RACCIOPPI Francesco',
+      'SALUTE Emanuela',
+      'SCARDINO Paolo',
+      'MASTRI Alessandra Nicole',
+      'MENEGALDO Silvio',
+      'TORASSA Nicole',
+      'BONOMINI Elena',
+      'GRIGORUTA Bianca Alexandra',
+      'CALO’ Roberta',
+      'DINU Vasile Silviu',
+      'CANGOGNI Alfredo Giuseppe'
+    ]
   },
   'amica': {
     title: 'Venaria Amica e Solidale',
-    names: ['PAPPALARDO Federica', 'ORLANDO Girolama', 'TOMIO Ingrid', 'FAVARON Loris', 'ALONGI Dorotea Maria', 'DALL\'ARMELLINA Massimo', 'LAMANNA Graziella', 'VISCUSO Vincenzo']
+    names: [
+      'PAPPALARDO Federica',
+      'ORLANDO Girolama',
+      'TOMIO Ingrid',
+      'FAVARON Loris',
+      'ALONGI Dorotea Maria Ninfa',
+      'DALL’ARMELLINA Massimo Gianni',
+      'LAMANNA Graziella Maria',
+      'VISCUSO Vincenzo',
+      'FRANCHI Giuseppe',
+      'FALCONI Daniela',
+      'GIAI Enrica',
+      'LO GIUDICE Marco',
+      'LUCIANI Pier Franco',
+      'PISANO Claudio',
+      'SOAVE Alessandro',
+      'RABELLINO Marco',
+      'PRONZATO Maria Luciana'
+    ]
   },
   'futura': {
     title: 'Venaria Futura',
-    names: ['Consultabile nel programma integrale']
+    names: [
+      'IORIO Giovanni Pio',
+      'CUSANNO Carlotta',
+      'CALÒ Maurizio',
+      'MANTOVANI Elisabetta',
+      'PISTILLO Giuseppina',
+      'LACIVITA Nicola',
+      'PUGLIESE Iris',
+      'BONANNO Stefania',
+      'PARRACINO Giovanna',
+      'LANZILLOTTA Margherita',
+      'BERNARDINELLO Margherita',
+      'ALFONSO Francesco',
+      'SALVEMINI Sabina',
+      'SALVAGUARDIA Pietro'
+    ]
   }
 };
 
