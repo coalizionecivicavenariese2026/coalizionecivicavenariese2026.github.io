@@ -1,0 +1,156 @@
+
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coalizione Civica Venariese 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <div class="logo-wrapper" style="display: flex; align-items: center; gap: 12px;">
+        <img src="assets/senza-partiti.png" 
+             alt="Senza Partiti" 
+             style="height: 45px; width: auto; transform: rotate(-5deg);">
+        
+        <a href="#" class="logo" style="text-decoration: none; font-weight: 800; font-size: 1.2rem; color: #c53030; letter-spacing: -0.5px;">
+            COALIZIONE<span style="color: #1a202c;">CIVICA</span>
+        </a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="nav-menu">
+        <a href="#candidato" onclick="toggleMenu()">Il Candidato</a>
+        <a href="#visione" onclick="toggleMenu()">Visione</a>
+        <a href="#coalizione" onclick="toggleMenu()">Le Liste</a>
+        <a href="#contatti" onclick="toggleMenu()">Partecipa</a>
+    </nav>
+</header>
+
+    <section class="hero reveal">
+        <h1>Venaria Reale <span>2026</span>.<br>Un'altra storia è possibile.</h1>
+        <p>Siamo l'alternativa civica, coraggiosa e trasparente che mette al centro il bene comune e il futuro delle nuove generazioni.</p>
+        <a href="#candidato" class="btn">Scopri il Progetto</a>
+    </section>
+
+    <section id="candidato" class="poster-section reveal">
+        <div class="poster-container">
+            <div class="poster-text">
+                <h2>Andrea Accorsi,<br>Candidato Sindaco.</h2>
+                <div class="divider" style="margin-left: 0;"></div>
+                <p>Il nostro progetto nasce da un'idea chiara: rimettere Venaria Reale nelle mani dei venariesi. Senza influenze, senza logiche di partito, con trasparenza e competenza.</p>
+                <p class="slogan-civico">NO a tutti i partiti,<br>SI a tutti i venariesi.</p>
+                <a href="assets/PROGDEF23042026.pdf" class="btn btn-outline">Leggi il Programma (PDF)</a>
+            </div>
+            <div class="poster-image">
+                <img src="assets/poster.jpg" alt="Manifesto elettorale di Andrea Accorsi - Candidato Sindaco">
+            </div>
+        </div>
+    </section>
+
+    <section id="visione">
+        <div style="text-align: center;" class="reveal">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">La nostra Visione</h2>
+            <div class="divider"></div>
+            <p style="max-width: 800px; margin: 0 auto 3rem; color: #4a5568;">
+                Un progetto civico nato dall'ascolto del territorio, per restituire dignità e futuro a Venaria Reale attraverso tre pilastri fondamentali.
+            </p>
+        </div>
+        <div class="grid">
+            <div class="card reveal" style="animation-delay: 0.1s;">
+                <h3 style="color: var(--primary);">Commercio e Lavoro</h3>
+                <p>Sostegno concreto alle attività di vicinato e alle botteghe storiche. Vogliamo una Venaria che torni a essere un centro commerciale naturale, vivo e attrattivo per i residenti e i turisti.</p>
+            </div>
+            <div class="card reveal" style="animation-delay: 0.2s;">
+                <h3 style="color: var(--primary);">Sicurezza e Quartieri</h3>
+                <p>Più decoro urbano e controllo del territorio. Ogni quartiere, dal centro alle periferie, deve essere sicuro, illuminato e curato, garantendo la qualità della vita che i venariesi meritano.</p>
+            </div>
+            <div class="card reveal" style="animation-delay: 0.3s;">
+                <h3 style="color: var(--primary);">Sociale e Terza Età</h3>
+                <p>Nessuno deve restare solo. Potenzieremo i servizi per gli anziani e le fasce fragili, creando spazi di aggregazione e assistenza domiciliare efficiente e umana.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="coalizione" style="background-color: var(--light);">
+    <div style="text-align: center;" class="reveal">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Le Liste della Coalizione</h2>
+        <div class="divider"></div>
+        <p style="margin-bottom: 3rem; color: #4a5568;">Cinque anime, un unico progetto per Venaria Reale.</p>
+    </div>
+    
+    <div class="logo-grid">
+        <div class="logo-item reveal" onclick="openModal('tua-lista')" style="animation-delay: 0.1s;">
+            <img src="assets/logo-lista-civica.jpeg" alt="La Tua Lista Civica">
+            <span>La Tua Lista Civica</span>
+        </div>
+        <div class="logo-item reveal" onclick="openModal('pensionati')" style="animation-delay: 0.2s;">
+            <img src="assets/logo-pensionati.jpeg" alt="Noi Pensionati per Venaria">
+            <span>Noi Pensionati per Venaria</span>
+        </div>
+        <div class="logo-item reveal" onclick="openModal('futura')" style="animation-delay: 0.3s;">
+            <img src="assets/logo-futura.jpeg" alt="Venaria Futura">
+            <span>Venaria Futura</span>
+        </div>
+        <div class="logo-item reveal" onclick="openModal('amica')" style="animation-delay: 0.4s;">
+            <img src="assets/logo-amica.jpeg" alt="Venaria Amica e Solidale">
+            <span>Venaria Amica e Solidale</span>
+        </div>
+        <div class="logo-item reveal" onclick="openModal('centro')" style="animation-delay: 0.5s;">
+            <img src="assets/logo-centro.jpeg" alt="Venaria Al Centro">
+            <span>Venaria Al Centro</span>
+        </div>
+    </div>
+</section>
+
+<div id="candidateModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Nome Lista</h2>
+        <div class="divider" style="margin-left: 0;"></div>
+        <div id="modalBody" class="candidate-list">
+            </div>
+    </div>
+</div>
+
+    <section id="contatti" class="reveal">
+        <div class="contact-info">
+            <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Costruiamo il domani, oggi.</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">Entra a far parte del gruppo di lavoro. La tua idea può cambiare la città.</p>
+            <p><strong>Email:</strong>coalizionecivicavenariese@gmail.com</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Venaria Reale (TO)</p>
+        </div>
+    </section>
+
+    <footer>
+        <p style="font-weight: 600;">Coalizione Civica Venariese 2026</p>
+        <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.5;">
+            &copy; 2026 - Documento programmatico per la cittadinanza
+        </p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;">
+            <a href="https://github.com/coalizionecivicavenariese2026/coalizionecivicavenariese2026.github.io" 
+               target="_blank" 
+               style="color: white; text-decoration: none; opacity: 0.7; transition: opacity 0.3s;"
+               onmouseover="this.style.opacity='1'" 
+               onmouseout="this.style.opacity='0.7'">
+               <span>&lt;/&gt;</span> Codice Open Source disponibile su GitHub
+            </a>
+        </p>
+      <p style="font-size: 0.8rem; margin-top: 0.5rem;">
+    <a href="https://drive.google.com/drive/folders/1I8SJbdgOxXr_SXnsS9l8n-CURHUXxagZ?usp=sharing" target="_blank" style="color: white; text-decoration: underline; opacity: 0.8;">
+        Trasparenza: CV e Casellari Giudiziari (Legge 3/2019)
+    </a>
+</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
